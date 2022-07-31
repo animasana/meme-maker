@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meme Maker</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="color-options">
+			<input type="color" id="color" />
+			<div
+				class="color-option"
+				style="background-color: #1abc9c"
+				data-color="#1abc9c"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #2ecc71"
+				data-color="#2ecc71"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #3498db"
+				data-color="#3498db"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #9b59b6"
+				data-color="#9b59b6"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #34495e"
+				data-color="#34495e"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #16a085"
+				data-color="#16a085"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #27ae60"
+				data-color="#27ae60"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #2980b9"
+				data-color="#2980b9"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #8e44ad"
+				data-color="#8e44ad"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #2c3e50"
+				data-color="#2c3e50"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #f1c40f"
+				data-color="#f1c40f"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #e67e22"
+				data-color="#e67e22"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #e74c3c"
+				data-color="#e74c3c"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #ecf0f1"
+				data-color="#ecf0f1"
+			></div>
+			<div
+				class="color-option"
+				style="background-color: #95a5a6"
+				data-color="#95a5a6"
+			></div>
+		</div>
+		<canvas></canvas>
+		<div class="btns">
+			<input
+				id="line-width"
+				type="range"
+				min="1"
+				max="10"
+				value="5"
+				step="0.5"
+			/>
+			<button id="mode-btn">💧 Fill 💧</button>
+			<button id="destroy-btn">💥 Destroy</button>
+			<button id="eraser-btn">❌ Erase</button>
+			<label for="file" class="file-label">📂 Add Photo</label>
+			<input type="file" accept="image/*" id="file" />
+			<input type="text" placeholder="Add text here... :)" id="text" />
+			<select id="fonts"></select>
+			<label for="font-size" class="font-size-label">Font Size</label>
+			<input
+				id="font-size"
+				type="range"
+				min="12"
+				max="64"
+				value="32"
+				step="4"
+			/>
+			<div>
+				<input type="checkbox" id="check" />
+				<label for="check" class="font-stroke-check">Stroke</label>
+			</div>
+      <div>        
+        <input type="radio" id="radioO0" class="pencil-option" value="bold" />
+        <label for="radio01" class="radio-btn">bold</label>
+        <input type="radio" id="radioO1" class="pencil-option" value="italic" />
+        <label for="radio02" class="radio-btn">italic</label>
+      </div>
+			<button id="save">📁 Save image</button>
+
+			<script src="app.js"></script>
+		</div>
+	</body>
+</html>
