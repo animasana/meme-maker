@@ -225,9 +225,10 @@ function onCanvasDblClick(event) {
 canvas.addEventListener("dblclick", onCanvasDblClick);
 
 function onDestroyBtnClick() {
+  ctx.save();
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.fillStyle = color.value;
+  ctx.restore();  
   if (isFilling) {
     isFilling = false;
     modeBtn.innerText = MODE_FILL_TEXT;
