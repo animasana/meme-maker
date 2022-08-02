@@ -109,6 +109,7 @@ async function registerFonts() {
     )
   );
 }
+registerFonts();
 
 const pencilOptions = Array.from(
   document.getElementsByClassName("pencil-option")
@@ -141,9 +142,6 @@ let isFilling = false;
 let isEmpty = false;
 const MODE_FILL_TEXT = "🩸 Fill 🩸";
 const MODE_DRAW_TEXT = "🖌️ DRAW";
-
-registerFonts();
-pencilOptions[0].checked = true;
 
 function onMouseMove(event) {
   if (isPainting) {
