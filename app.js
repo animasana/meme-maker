@@ -203,7 +203,7 @@ function onCanvasDblClick(event) {
 
   ctx.save();
   ctx.lineWidth = 1;  
-  ctx.font = `${pencilOptions.find((pencil) => pencil.checked).value}	 
+  ctx.font = `${pencilOptions.find((aPencil) => aPencil.checked).value}	 
     ${fontSizeInput.value}px 
     ${fontDropBox.options[fontDropBox.selectedIndex].value}`;
   console.log(ctx.font);
@@ -279,9 +279,9 @@ saveBtn.addEventListener("click", onSaveBtnClick);
 
 function onPencilClick(event) {  
   pencilOptions
-    .filter((pencil) => pencil.value !== event.target.value)
-    .forEach((pencil) => (pencil.checked = false));
+    .filter((aPencil) => aPencil.value !== event.target.value)
+    .forEach((aPencil) => (aPencil.checked = false));
 }
-pencilOptions.forEach((pencilOption) =>
-  pencilOption.addEventListener("click", onPencilClick)
+pencilOptions.forEach((aPencilOption) =>
+  aPencilOption.addEventListener("click", onPencilClick)
 );
