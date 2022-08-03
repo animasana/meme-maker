@@ -136,7 +136,6 @@ ctx.lineWidth = lineWidth.value;
 ctx.lineCap = "round";
 let isPainting = false;
 let isFilling = false;
-let isEmpty = false;
 const MODE_FILL_TEXT = "🩸 Fill 🩸";
 const MODE_DRAW_TEXT = "🖌️ DRAW";
 
@@ -277,11 +276,6 @@ function onSaveBtnClick(event) {
   a.click();
 }
 saveBtn.addEventListener("click", onSaveBtnClick);
-
-function onFontDropBoxChange(event) {
-  fontName = event.target.value;
-}
-fontDropBox.addEventListener("change", onFontDropBoxChange);
 
 function onPencilClick(event) {  
   pencilOptions
