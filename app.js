@@ -99,10 +99,7 @@ async function registerFonts() {
     }
   }
 
-  const fontList = [...fontAvailable.values()];
-  console.log("Available Fonts:", fontList);
-
-  fontList.forEach((font) =>
+  [...fontAvailable.values()].forEach((font) =>
     fontDropBox.insertAdjacentHTML(
       "beforeend",
       `<option value="${font}">${font}</option>`
